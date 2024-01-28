@@ -1,7 +1,17 @@
 require 'rspec'
 
 def find_smallest_int(arr)
-  return arr.min
+#   return arr.min
+
+  return nil if arr.empty?
+
+  smallest = arr[0]
+
+  arr.each do |element|
+    smallest = element if element < smallest
+  end
+
+  smallest
 end
 
 describe 'find_smallest_int' do
