@@ -32,7 +32,7 @@ SELECT COUNT(*) AS total_students FROM students;
 
 SELECT * FROM students WHERE location = 'Manila';
 
-SELECT AVG(age) AS average_age FROM students;
+SELECT ROUND(AVG(age),2) AS average_age FROM students;
 
 SELECT * FROM students ORDER BY age DESC;
 
