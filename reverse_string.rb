@@ -7,7 +7,7 @@ def reverse_string(str)
     i -= 1
   end
 
-  return reversed
+  reversed
 
 end
 
